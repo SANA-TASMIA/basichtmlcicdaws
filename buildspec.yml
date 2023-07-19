@@ -1,0 +1,11 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Build phase"
+      - zip -r html-demo.zip .
+
+artifacts:
+  files:
+    - html-demo.zip
