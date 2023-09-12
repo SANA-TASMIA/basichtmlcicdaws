@@ -4,16 +4,3 @@ os: linux
 files:
   - source: /
     destination: /var/www/html
-
-permissions:
-  - object: /var/www/html
-    pattern: "**"
-    owner: ubuntu
-    group: ubuntu
-    mode: 755
-
-hooks:
-  ApplicationStart:
-    - location: scripts/application_start.sh
-      timeout: 300
-      runas: root
